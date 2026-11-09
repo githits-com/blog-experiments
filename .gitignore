@@ -22,3 +22,8 @@ venv/
 
 # Local scratch (do not commit)
 STAGING_NOTES.md
+
+# Run output (do not commit)
+results/
+logs/
+out/

@@ -13,6 +13,7 @@ for p,t,s in CELLS:
     J+=[dict(base,kind='disk',rep=r) for r in range(REPS['disk'])]
 # interleave so every cell starts early and cold-start/time-of-day effects spread across cells
 J.sort(key=lambda j:(j['rep'],j['kind'],j.get('repo',''),j.get('mode',''),j['provider'],j['type'],j['shape']))
+os.makedirs(f'{ROOT}/results',exist_ok=True)
 json.dump(J,open(f'{ROOT}/results/jobs_full.json','w'),indent=0)
 smoke=[dict(provider=p,type=t,shape='medium',kind='lifecycle',rep=0) for p,t,_ in CELLS if _=='medium']
 json.dump(smoke,open(f'{ROOT}/results/jobs_pilot.json','w'),indent=0)

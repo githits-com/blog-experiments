@@ -1,8 +1,8 @@
 # blog-experiments
 
-Code, data, and analysis behind [GitHits](https://githits.com) blog posts, so readers can reproduce the numbers.
+Code behind [GitHits](https://githits.com) blog posts, so readers can reproduce the numbers. Published results live in the posts. This repo holds the harness and analysis scripts only; run output is not committed.
 
-Each folder is one post. The harness, raw result files, generated tables, and a short report live together. Nothing here calls an LLM unless a post says so.
+Each folder is one post. Nothing here calls an LLM unless a post says so.
 
 ## Posts
 
@@ -19,9 +19,11 @@ cd <folder>
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 # export the API keys named in that folder's README
-./run.sh                 # paid provider runs (optional; results are already committed)
-python3 analysis/analyze.py   # regenerates out/tables.md from committed results
+./run.sh                      # paid provider runs; writes local results/ and logs/
+python3 analysis/analyze.py   # writes local out/tables.md from those results
 ```
+
+`results/`, `logs/`, and `out/` are gitignored. If `results/` is missing, the analysis scripts print a short message and exit.
 
 ## License
 

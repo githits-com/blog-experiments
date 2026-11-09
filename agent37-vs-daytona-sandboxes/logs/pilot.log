@@ -1,5 +1,0 @@
-12:16:10 daytona default medium lifecycle   0 ok $0.008
-12:16:12 agent37 performance medium lifecycle   0 ok $0.001
-12:16:14 agent37 default medium lifecycle   0 ok $0.002
-12:16:15 agent37 vm medium lifecycle   0 ok $0.003
-DONE {'ok': 4} {'agent37': 0.003, 'daytona': 0.008}

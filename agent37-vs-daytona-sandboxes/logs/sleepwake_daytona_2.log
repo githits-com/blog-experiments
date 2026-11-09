@@ -1,5 +1,0 @@
-daytona 0 {'cycle': 0, 'sleep_call_s': 1.15, 'wake_to_first_cmd_s': 1.48, 'counter_before': '21', 'after': ['persisted', '21', 'NOPROC'], 'last_err': None}
-daytona 1 {'cycle': 1, 'sleep_call_s': 1.01, 'wake_to_first_cmd_s': 1.24, 'counter_before': '21', 'after': ['persisted', '21', 'NOPROC'], 'last_err': None}
-daytona 2 {'cycle': 2, 'sleep_call_s': 2.04, 'wake_to_first_cmd_s': 1.31, 'counter_before': '21', 'after': ['persisted', '21', 'NOPROC'], 'last_err': None}
-daytona 3 {'cycle': 3, 'sleep_call_s': 1.18, 'wake_to_first_cmd_s': 1.16, 'counter_before': '21', 'after': ['persisted', '21', 'NOPROC'], 'last_err': None}
-daytona 4 {'cycle': 4, 'sleep_call_s': 4.01, 'wake_to_first_cmd_s': 1.55, 'counter_before': '21', 'after': ['persisted', '21', 'NOPROC'], 'last_err': None}

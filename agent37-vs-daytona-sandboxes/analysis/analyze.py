@@ -2,6 +2,13 @@
 Medians with bootstrap 95% CIs over sandboxes (2,000 resamples, seed 0). Every failure is counted, nothing is dropped."""
 import json,glob,os,random,statistics as st,collections,sys
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__))); sys.path.insert(0,f'{ROOT}/harness'); import providers as P
+def require_results():
+    patterns=(f'{ROOT}/results/runs_full/*.json',f'{ROOT}/results/runs_full_harness_failed/*.json',f'{ROOT}/results/burst/*.json',f'{ROOT}/results/sleepwake/*.json',f'{ROOT}/results/soak/*.json')
+    if any(glob.glob(p) for p in patterns): return
+    sys.exit('No benchmark JSON under results/. This repository stores code only; run output is not committed.\n'
+             'Published numbers: https://githits.com/blog/agent37-daytona-sandboxes-for-coding-agents/\n'
+             'Reproduce with ./run.sh (export AGENT37_API_KEY and DAYTONA_API_KEY), then re-run this script.')
+require_results()
 random.seed(0)
 def ci(xs,f=st.median,B=2000):
     xs=[x for x in xs if x is not None]

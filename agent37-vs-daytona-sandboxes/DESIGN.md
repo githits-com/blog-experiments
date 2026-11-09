@@ -82,7 +82,7 @@ LLM: $0. **Total hard cap: $15.** The runner stops starting new jobs on a provid
 ./run.sh                      # pilot, grid, sleep/wake, bursts, cleanup, tables
 python3 analysis/billing.py   # >1 h later: Agent37 billed vs modeled
 ```
-Results: `results/runs_*/` (one JSON per sandbox), `results/burst/`, `results/sleepwake/`, `results/sandboxes.jsonl` (every create and delete). Tables: `out/tables.md`.
+A run writes local output only (gitignored; not in this repository): `results/runs_*/` (one JSON per sandbox), `results/burst/`, `results/sleepwake/`, `results/sandboxes.jsonl` (every create and delete), and `out/tables.md`. Published numbers are in the blog post: https://githits.com/blog/agent37-daytona-sandboxes-for-coding-agents/
 
 ## Fairness notes
 

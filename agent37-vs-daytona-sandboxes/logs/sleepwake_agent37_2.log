@@ -1,5 +1,0 @@
-agent37 0 {'cycle': 0, 'sleep_call_s': 1.98, 'wake_to_first_cmd_s': 0.43, 'counter_before': '21', 'after': ['persisted', '22', 'PROC'], 'last_err': None}
-agent37 1 {'cycle': 1, 'sleep_call_s': 1.96, 'wake_to_first_cmd_s': 0.42, 'counter_before': '22', 'after': ['persisted', '22', 'PROC'], 'last_err': None}
-agent37 2 {'cycle': 2, 'sleep_call_s': 1.37, 'wake_to_first_cmd_s': 0.45, 'counter_before': '22', 'after': ['persisted', '22', 'PROC'], 'last_err': None}
-agent37 3 {'cycle': 3, 'sleep_call_s': 1.71, 'wake_to_first_cmd_s': 0.52, 'counter_before': '22', 'after': ['persisted', '22', 'PROC'], 'last_err': None}
-agent37 4 {'cycle': 4, 'sleep_call_s': 1.8, 'wake_to_first_cmd_s': 0.43, 'counter_before': '22', 'after': ['persisted', '22', 'PROC'], 'last_err': None}
