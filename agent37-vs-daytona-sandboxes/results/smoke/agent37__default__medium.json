@@ -1,0 +1,69 @@
+{
+ "provider": "agent37",
+ "shape": "medium",
+ "type": "default",
+ "id": "teh9mkih06",
+ "create_s": 0.83,
+ "create_resp": {
+  "status": "running",
+  "resources": {
+   "cpu": 2,
+   "memory": 4,
+   "disk": 8
+  },
+  "type": "default",
+  "region": "us",
+  "template": "agent37-base"
+ },
+ "first_cmd_s": 0.557,
+ "exec_rtt_s": [
+  0.269,
+  0.282,
+  0.333,
+  0.349,
+  0.252
+ ],
+ "upload_s": 0.99,
+ "sysinfo": {
+  "rc": 0,
+  "wall_s": 0.41,
+  "out": {
+   "probe": "sysinfo",
+   "nproc": 2,
+   "affinity": 2,
+   "mem_total_kb": 4194304,
+   "cg_mem_max": null,
+   "cg_cpu_max": null,
+   "kernel": "4.19.0-gvisor",
+   "cpu_model": "unknown",
+   "home_free_b": 8589926400,
+   "home_total_b": 8589934592,
+   "root_free_b": 10737389568,
+   "dmesg_ok": true,
+   "git": "git version 2.39.5"
+  },
+  "tail": null
+ },
+ "cpu10": {
+  "rc": 0,
+  "wall_s": 10.32,
+  "out": {
+   "probe": "cpu",
+   "procs": 2,
+   "seconds": 10.0,
+   "window_rate": [
+    5645441
+   ],
+   "first": 5645441,
+   "last": 5645441,
+   "min": 5645441,
+   "max": 5645441,
+   "cg_cpu_stat": null
+  },
+  "tail": null
+ },
+ "env": "uid=0(root) gid=0(root) groups=0(root)\nFilesystem      Size  Used Avail Use% Mounted on\nnone             10G   28K   10G   1% /\nnone            8.0G  8.0K  8.0G   1% /home/node\nnone             63G  4.0K   63G   1% /tmp\nPRETTY_NAME=\"Debian GNU/Linux 12 (bookworm)\"\nNAME=\"Debian GNU/Linux\"\n",
+ "deleted": true,
+ "delete_s": 0.32,
+ "life_s": 15.2
+}

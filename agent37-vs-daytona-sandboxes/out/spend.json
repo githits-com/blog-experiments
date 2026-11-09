@@ -1,0 +1,18 @@
+{
+ "agent37": {
+  "sandboxes": 541,
+  "hours": 20.4155,
+  "usd": 0.428,
+  "usd_whole_minutes": 0.5182,
+  "alive": 1,
+  "delete_failed": 0
+ },
+ "daytona": {
+  "sandboxes": 289,
+  "hours": 9.9278,
+  "usd": 2.3566,
+  "usd_whole_minutes": 3.0525,
+  "alive": 1,
+  "delete_failed": 0
+ }
+}

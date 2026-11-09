@@ -1,0 +1,209 @@
+12:26:41 agent37 vm medium clone vercel/next.js shallow 2 ok $0.046
+12:26:41 agent37 performance medium clone vercel/next.js shallow 2 ok $0.046
+12:26:53 agent37 default large disk   2 ok $0.046
+12:26:55 agent37 default medium disk   2 ok $0.046
+12:26:58 agent37 performance medium disk   2 ok $0.046
+12:27:00 agent37 vm large clone vercel/next.js shallow 2 ok $0.047
+12:27:04 agent37 performance large disk   2 ok $0.047
+12:27:18 agent37 vm large disk   2 ok $0.047
+12:27:27 agent37 vm medium disk   2 ok $0.048
+12:27:43 agent37 performance large clone kubernetes/kubernetes full 2 ok $0.049
+12:27:43 agent37 performance large clone kubernetes/kubernetes full 0 ok $0.050
+12:27:54 agent37 performance medium clone kubernetes/kubernetes full 0 ok $0.051
+12:27:57 agent37 default large mem   2 ok $0.051
+12:28:03 agent37 default large clone vercel/next.js full 1 ok $0.051
+12:28:05 agent37 performance large clone pytorch/pytorch full 0 ok $0.053
+12:28:09 agent37 performance large mem   2 ok $0.053
+12:28:14 agent37 performance large clone vercel/next.js full 0 ok $0.055
+12:28:14 agent37 performance medium mem   2 ok $0.055
+12:28:14 agent37 performance large clone pytorch/pytorch full 2 ok $0.056
+12:28:15 daytona default large clone kubernetes/kubernetes full 3 ok $0.382
+12:28:15 daytona default large clone vercel/next.js full 4 ok $0.393
+12:28:15 agent37 default medium clone kubernetes/kubernetes full 0 ok $0.056
+12:28:16 agent37 vm large clone pytorch/pytorch full 1 ok $0.058
+12:28:17 agent37 vm large clone kubernetes/kubernetes full 1 ok $0.059
+12:28:25 agent37 default large clone pytorch/pytorch full 0 ok $0.059
+12:28:26 agent37 vm large mem   2 ok $0.059
+12:28:26 agent37 vm medium mem   2 ok $0.059
+12:28:30 daytona default large clone kubernetes/kubernetes full 0 ok $0.405
+12:28:35 agent37 default large clone vercel/next.js full 2 ok $0.060
+12:28:36 agent37 default medium clone kubernetes/kubernetes shallow 3 ok $0.060
+12:28:50 agent37 performance large clone kubernetes/kubernetes shallow 3 ok $0.060
+12:28:53 agent37 default medium clone pytorch/pytorch full 1 ok $0.061
+12:29:02 agent37 vm large clone kubernetes/kubernetes shallow 3 ok $0.061
+12:29:07 agent37 performance medium clone kubernetes/kubernetes shallow 3 ok $0.061
+12:29:11 agent37 vm medium clone kubernetes/kubernetes shallow 3 ok $0.061
+12:29:35 agent37 performance large clone kubernetes/kubernetes full 3 ok $0.062
+12:29:42 daytona default medium clone pytorch/pytorch full 0 ok $0.414
+12:29:47 agent37 default large clone kubernetes/kubernetes shallow 3 ok $0.063
+12:29:56 agent37 default medium clone kubernetes/kubernetes full 2 ok $0.063
+12:30:07 agent37 default large lifecycle   2 ok $0.064
+12:30:13 agent37 performance large lifecycle   2 ok $0.067
+12:30:15 agent37 default medium lifecycle   2 ok $0.067
+12:30:15 agent37 performance medium lifecycle   2 ok $0.068
+12:30:19 agent37 default medium clone vercel/next.js full 2 ok $0.069
+12:30:24 agent37 vm large lifecycle   2 ok $0.071
+12:30:37 agent37 default large clone pytorch/pytorch shallow 3 ok $0.071
+12:30:38 agent37 vm medium lifecycle   2 ok $0.072
+12:30:39 agent37 vm large clone pytorch/pytorch shallow 3 ok $0.072
+12:30:43 daytona default medium clone vercel/next.js full 4 ok $0.426
+12:30:47 agent37 performance large clone pytorch/pytorch shallow 3 ok $0.073
+12:31:05 agent37 performance medium clone pytorch/pytorch shallow 3 ok $0.073
+12:31:07 agent37 default large clone vercel/next.js shallow 3 ok $0.073
+12:31:13 agent37 default medium clone pytorch/pytorch shallow 3 ok $0.073
+12:31:23 agent37 default medium clone kubernetes/kubernetes full 3 ok $0.074
+12:31:27 agent37 performance large clone pytorch/pytorch full 3 ok $0.076
+12:31:29 agent37 performance medium clone vercel/next.js shallow 3 ok $0.076
+12:31:34 daytona default large clone kubernetes/kubernetes full 1 ok $0.455
+12:31:49 agent37 performance large clone vercel/next.js shallow 3 ok $0.076
+12:31:50 agent37 vm medium clone kubernetes/kubernetes full 1 ok $0.078
+12:31:54 agent37 default medium clone vercel/next.js shallow 3 ok $0.078
+12:32:02 agent37 vm large clone vercel/next.js shallow 3 ok $0.078
+12:32:04 agent37 vm medium clone vercel/next.js shallow 3 ok $0.078
+12:32:05 daytona default medium clone pytorch/pytorch full 4 ok $0.471
+12:32:15 daytona default medium clone kubernetes/kubernetes full 1 ok $0.487
+12:32:18 agent37 performance large clone vercel/next.js full 3 ok $0.080
+12:32:24 agent37 vm medium clone pytorch/pytorch shallow 3 ok $0.081
+12:32:39 agent37 performance medium clone pytorch/pytorch full 1 ok $0.083
+12:32:47 agent37 default large mem   3 ok $0.083
+12:33:00 agent37 performance large mem   3 ok $0.084
+12:33:08 agent37 performance medium mem   3 ok $0.084
+12:33:14 daytona default large clone pytorch/pytorch full 0 ok $0.525
+12:33:20 agent37 vm medium clone kubernetes/kubernetes full 2 ok $0.086
+12:33:21 agent37 vm large mem   3 ok $0.086
+12:33:29 agent37 vm medium mem   3 ok $0.086
+12:33:51 agent37 performance medium clone pytorch/pytorch full 2 ok $0.089
+12:33:51 agent37 default large clone kubernetes/kubernetes full 3 ok $0.090
+12:34:17 daytona default large clone pytorch/pytorch full 1 ok $0.569
+12:34:26 daytona default medium clone pytorch/pytorch full 3 ok $0.592
+12:34:35 daytona default large clone kubernetes/kubernetes full 2 ok $0.637
+12:34:42 agent37 performance large clone kubernetes/kubernetes full 4 ok $0.091
+12:34:43 agent37 default large lifecycle   3 ok $0.092
+12:34:51 agent37 performance medium clone pytorch/pytorch full 3 ok $0.095
+12:35:04 agent37 performance large lifecycle   3 ok $0.097
+12:35:05 agent37 default medium lifecycle   3 ok $0.098
+12:35:06 agent37 default medium mem   2 ok $0.098
+12:35:08 daytona default medium clone pytorch/pytorch full 2 ok $0.662
+12:35:09 agent37 performance medium lifecycle   3 ok $0.100
+12:35:14 agent37 vm medium clone pytorch/pytorch full 0 ok $0.102
+12:35:20 agent37 vm medium lifecycle   3 ok $0.103
+12:35:25 agent37 performance medium clone kubernetes/kubernetes full 4 ok $0.104
+12:35:26 agent37 vm large lifecycle   3 ok $0.106
+12:35:26 agent37 vm large clone vercel/next.js full 1 ok $0.110
+12:35:34 agent37 vm large clone pytorch/pytorch full 0 ok $0.115
+12:35:36 agent37 vm medium clone kubernetes/kubernetes shallow 4 ok $0.115
+12:35:45 agent37 default medium clone kubernetes/kubernetes full 4 ok $0.116
+12:35:46 agent37 vm large clone kubernetes/kubernetes shallow 4 ok $0.116
+12:35:46 agent37 default large clone kubernetes/kubernetes shallow 4 ok $0.116
+12:35:47 agent37 performance large clone kubernetes/kubernetes shallow 4 ok $0.117
+12:35:47 agent37 performance medium clone kubernetes/kubernetes shallow 4 ok $0.117
+12:35:47 agent37 default medium clone kubernetes/kubernetes shallow 4 ok $0.117
+12:35:58 daytona default large clone vercel/next.js full 3 ok $0.715
+12:36:13 agent37 performance medium clone pytorch/pytorch shallow 4 ok $0.117
+12:36:14 agent37 default medium clone vercel/next.js full 3 ok $0.118
+12:36:16 agent37 default medium clone pytorch/pytorch shallow 4 ok $0.118
+12:36:16 daytona default large clone pytorch/pytorch full 2 ok $0.770
+12:36:17 agent37 performance large clone pytorch/pytorch shallow 4 ok $0.118
+12:36:18 daytona default large clone vercel/next.js full 2 ok $0.825
+12:36:26 agent37 default large clone pytorch/pytorch shallow 4 ok $0.119
+12:36:32 agent37 vm large clone pytorch/pytorch shallow 4 ok $0.119
+12:36:33 agent37 vm medium clone pytorch/pytorch shallow 4 ok $0.119
+12:36:38 agent37 vm medium clone kubernetes/kubernetes full 0 ok $0.122
+12:36:40 daytona default medium clone kubernetes/kubernetes full 2 ok $0.854
+12:36:57 agent37 default medium clone vercel/next.js shallow 4 ok $0.122
+12:36:59 daytona default medium clone pytorch/pytorch full 1 ok $0.883
+12:37:03 agent37 default large clone vercel/next.js full 3 ok $0.124
+12:37:17 agent37 default large clone pytorch/pytorch full 4 ok $0.124
+12:37:19 daytona default medium clone vercel/next.js full 1 ok $0.914
+12:37:20 agent37 performance large clone vercel/next.js shallow 4 ok $0.125
+12:37:20 agent37 default large clone vercel/next.js shallow 4 ok $0.125
+12:37:25 agent37 vm large clone vercel/next.js shallow 4 ok $0.125
+12:37:30 agent37 default medium clone pytorch/pytorch full 3 ok $0.126
+12:37:38 agent37 vm medium clone vercel/next.js shallow 4 ok $0.126
+12:37:39 agent37 performance medium clone vercel/next.js shallow 4 ok $0.126
+12:37:49 agent37 vm large clone kubernetes/kubernetes full 2 ok $0.132
+12:37:59 agent37 performance medium clone vercel/next.js full 4 ok $0.133
+12:38:20 agent37 default medium mem   4 ok $0.133
+12:38:44 agent37 performance large mem   4 ok $0.133
+12:38:46 agent37 default medium clone vercel/next.js full 4 ok $0.134
+12:38:53 agent37 vm large clone vercel/next.js full 0 ok $0.140
+12:38:59 daytona default medium clone vercel/next.js full 3 ok $0.949
+12:39:00 daytona default large clone pytorch/pytorch full 4 ok $1.019
+12:39:04 agent37 performance medium mem   4 ok $0.140
+12:39:08 agent37 performance medium clone kubernetes/kubernetes full 3 ok $0.145
+12:39:10 agent37 default medium clone pytorch/pytorch full 0 ok $0.147
+12:39:11 agent37 vm large mem   4 ok $0.147
+12:39:16 agent37 vm medium mem   4 ok $0.147
+12:39:20 daytona default medium clone kubernetes/kubernetes full 3 ok $1.055
+12:39:33 agent37 default large clone vercel/next.js full 4 ok $0.148
+12:39:46 agent37 default medium mem   3 ok $0.149
+12:40:05 agent37 vm medium clone pytorch/pytorch full 2 ok $0.152
+12:40:05 agent37 vm medium clone vercel/next.js full 1 ok $0.156
+12:40:25 agent37 vm large clone kubernetes/kubernetes full 3 ok $0.162
+12:40:31 daytona default large clone vercel/next.js full 1 ok $1.133
+12:40:34 agent37 default medium lifecycle   4 ok $0.163
+12:40:39 agent37 default large lifecycle   4 ok $0.163
+12:40:41 agent37 performance large lifecycle   4 ok $0.166
+12:40:46 agent37 performance medium lifecycle   4 ok $0.167
+12:41:00 agent37 vm large lifecycle   4 ok $0.169
+12:41:00 agent37 vm medium lifecycle   4 ok $0.170
+12:41:02 daytona default large clone vercel/next.js full 0 ok $1.214
+12:41:12 daytona default large clone pytorch/pytorch full 3 ok $1.297
+12:41:33 agent37 default large clone pytorch/pytorch full 3 ok $0.173
+12:41:47 agent37 vm medium clone kubernetes/kubernetes full 3 ok $0.177
+12:42:17 agent37 vm large clone vercel/next.js full 3 ok $0.183
+12:42:19 agent37 default large lifecycle   5 ok $0.183
+12:42:22 agent37 default medium lifecycle   5 ok $0.184
+12:42:26 agent37 performance medium lifecycle   5 ok $0.185
+12:42:26 agent37 performance large lifecycle   5 ok $0.188
+12:42:31 agent37 vm large lifecycle   5 ok $0.190
+12:42:45 agent37 vm medium clone vercel/next.js full 3 ok $0.193
+12:42:54 agent37 vm medium lifecycle   5 ok $0.194
+12:42:55 agent37 vm medium clone pytorch/pytorch full 4 ok $0.196
+12:43:00 agent37 default large lifecycle   6 ok $0.196
+12:43:02 agent37 vm large clone pytorch/pytorch full 3 ok $0.204
+12:43:11 agent37 default medium clone pytorch/pytorch full 2 ok $0.206
+12:43:18 agent37 default medium lifecycle   6 ok $0.206
+12:43:21 agent37 performance large lifecycle   6 ok $0.209
+12:43:35 daytona default medium clone vercel/next.js full 2 ok $1.344
+12:43:39 agent37 performance medium lifecycle   6 ok $0.210
+12:43:54 agent37 default large lifecycle   7 ok $0.211
+12:43:55 agent37 vm large lifecycle   6 ok $0.212
+12:43:59 agent37 default medium lifecycle   7 ok $0.213
+12:44:01 agent37 vm medium lifecycle   6 ok $0.214
+12:44:15 agent37 performance large lifecycle   7 ok $0.216
+12:44:16 agent37 performance medium lifecycle   7 ok $0.218
+12:44:24 agent37 performance medium clone vercel/next.js full 1 ok $0.225
+12:44:29 agent37 performance medium clone pytorch/pytorch full 4 ok $0.229
+12:44:46 daytona default medium clone kubernetes/kubernetes full 0 ok $1.395
+12:44:54 agent37 vm large lifecycle   7 ok $0.231
+12:45:09 agent37 vm medium clone pytorch/pytorch full 3 ok $0.235
+12:45:09 agent37 vm medium lifecycle   7 ok $0.236
+12:45:11 agent37 default large mem   4 ok $0.238
+12:45:31 agent37 default large lifecycle   8 ok $0.238
+12:45:37 agent37 performance large lifecycle   8 ok $0.241
+12:45:38 agent37 default large clone kubernetes/kubernetes full 4 ok $0.244
+12:45:38 agent37 default medium lifecycle   8 ok $0.244
+12:45:41 agent37 performance medium lifecycle   8 ok $0.246
+12:45:41 agent37 default medium clone pytorch/pytorch full 4 ok $0.247
+12:45:46 agent37 vm medium clone kubernetes/kubernetes full 4 ok $0.250
+12:45:48 agent37 vm large lifecycle   8 ok $0.251
+12:45:55 agent37 vm medium lifecycle   8 ok $0.252
+12:46:00 agent37 default large lifecycle   9 ok $0.253
+12:46:09 agent37 performance large lifecycle   9 ok $0.256
+12:46:16 agent37 default medium lifecycle   9 ok $0.256
+12:46:17 agent37 vm large lifecycle   9 ok $0.258
+12:46:21 agent37 performance medium lifecycle   9 ok $0.259
+12:46:40 agent37 performance large clone pytorch/pytorch full 4 ok $0.269
+12:48:11 agent37 vm large clone vercel/next.js full 2 ok $0.280
+12:48:51 agent37 performance medium clone vercel/next.js full 3 ok $0.288
+12:49:13 agent37 vm medium clone vercel/next.js full 2 ok $0.294
+12:49:15 agent37 vm large clone pytorch/pytorch full 4 ok $0.301
+12:50:39 agent37 vm medium clone vercel/next.js full 4 ok $0.305
+12:51:41 agent37 vm medium clone pytorch/pytorch full 1 ok $0.312
+12:52:32 daytona default large clone kubernetes/kubernetes full 4 ok $1.540
+12:53:48 agent37 vm large clone kubernetes/kubernetes full 4 ok $0.322
+12:55:29 agent37 performance large clone vercel/next.js full 4 ok $0.338
+12:57:42 agent37 vm medium lifecycle   9 ERR $0.342
+13:01:32 agent37 vm large clone vercel/next.js full 4 ok $0.355
+DONE {'ok': 207, 'ERR': 1} {'agent37': 0.355, 'daytona': 1.54}

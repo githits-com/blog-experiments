@@ -1,0 +1,3170 @@
+[
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "disk",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "disk",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "disk",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "disk",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "disk",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "disk",
+"rep": 0
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "disk",
+"rep": 0
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "disk",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 0
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 0
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "mem",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "mem",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "mem",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "mem",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "mem",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "mem",
+"rep": 0
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "mem",
+"rep": 0
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "mem",
+"rep": 0
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "disk",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "disk",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "disk",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "disk",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "disk",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "disk",
+"rep": 1
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "disk",
+"rep": 1
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "disk",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 1
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 1
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "mem",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "mem",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "mem",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "mem",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "mem",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "mem",
+"rep": 1
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "mem",
+"rep": 1
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "mem",
+"rep": 1
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "disk",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "disk",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "disk",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "disk",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "disk",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "disk",
+"rep": 2
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "disk",
+"rep": 2
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "disk",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 2
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 2
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "mem",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "mem",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "mem",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "mem",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "mem",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "mem",
+"rep": 2
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "mem",
+"rep": 2
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "mem",
+"rep": 2
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 3
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 3
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "mem",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "mem",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "mem",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "mem",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "mem",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "mem",
+"rep": 3
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "mem",
+"rep": 3
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "mem",
+"rep": 3
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "kubernetes/kubernetes",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "pytorch/pytorch",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "full",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "clone",
+"repo": "vercel/next.js",
+"mode": "shallow",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 4
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 4
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "mem",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "mem",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "mem",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "mem",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "mem",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "mem",
+"rep": 4
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "mem",
+"rep": 4
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "mem",
+"rep": 4
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 5
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 5
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 5
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 5
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 5
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 5
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 5
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 5
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 6
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 6
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 6
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 6
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 6
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 6
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 6
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 6
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 7
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 7
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 7
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 7
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 7
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 7
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 7
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 7
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 8
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 8
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 8
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 8
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 8
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 8
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 8
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 8
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 9
+},
+{
+"provider": "agent37",
+"type": "default",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 9
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 9
+},
+{
+"provider": "agent37",
+"type": "performance",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 9
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 9
+},
+{
+"provider": "agent37",
+"type": "vm",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 9
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "large",
+"kind": "lifecycle",
+"rep": 9
+},
+{
+"provider": "daytona",
+"type": "default",
+"shape": "medium",
+"kind": "lifecycle",
+"rep": 9
+}
+]
