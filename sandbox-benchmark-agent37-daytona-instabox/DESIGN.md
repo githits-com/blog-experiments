@@ -6,13 +6,13 @@ This is an infrastructure benchmark. No LLM is called: an agent loop adds model 
 
 ## Arms (cells)
 
-| Provider | Type | Shapes (vCPU / GiB RAM / GiB disk) | Notes |
-|---|---|---|---|
-| Daytona | default (`daytona-medium`, `daytona-large`) | 2/4/8, 4/8/10 | per-second billing, first 5 GiB disk free |
-| Agent37 | `default` (`agent37-base`) | 2/4/8, 4/8/10 | gVisor container on shared hosts |
-| Agent37 | `vm` (`agent37-ubuntu`) | 2/4/8, 4/8/10 | own kernel, compute 2.5x the default rate |
-| Agent37 | `performance` (`agent37-base`) | 2/4/8, 4/8/10 | cores held for the instance, compute 4x |
-| InstaBox | `agent-browser` (override with `INSTABOX_TEMPLATE`) | 2/4 and 4/8, disk fixed at 20 GiB | Pro workspace. See amendment A1 |
+| Provider | Type                                                | Shapes (vCPU / GiB RAM / GiB disk) | Notes                                     |
+| -------- | --------------------------------------------------- | ---------------------------------- | ----------------------------------------- |
+| Daytona  | default (`daytona-medium`, `daytona-large`)         | 2/4/8, 4/8/10                      | per-second billing, first 5 GiB disk free |
+| Agent37  | `default` (`agent37-base`)                          | 2/4/8, 4/8/10                      | gVisor container on shared hosts          |
+| Agent37  | `vm` (`agent37-ubuntu`)                             | 2/4/8, 4/8/10                      | own kernel, compute 2.5x the default rate |
+| Agent37  | `performance` (`agent37-base`)                      | 2/4/8, 4/8/10                      | cores held for the instance, compute 4x   |
+| InstaBox | `agent-browser` (override with `INSTABOX_TEMPLATE`) | 2/4 and 4/8, disk fixed at 20 GiB  | Pro workspace. See amendment A1           |
 
 Shapes are matched on CPU and RAM: Agent37 2/4 against Daytona Medium and InstaBox Medium, Agent37 4/8 against Daytona Large and InstaBox Large. Agent37 and Daytona use the same disk; InstaBox disk is the fixed 20 GiB `/data`. Agent37's smallest shape is 2 vCPU / 4 GB, so there is no counterpart to the 1 vCPU / 1 GiB Daytona Small used in earlier experiments; Small is left out. Region: Agent37 `us` (the only region with the default type); Daytona's default region.
 
@@ -20,32 +20,32 @@ Shapes are matched on CPU and RAM: Agent37 2/4 against Daytona Medium and InstaB
 
 Every job is one fresh sandbox: create, probes, delete. The same job spec runs on each provider through `harness/providers.py`, a small provider interface (create, exec, upload, delete, sleep, wake). In-sandbox measurement is `harness/probe.py`, Python standard library only.
 
-| # | Metric | How |
-|---|---|---|
-| M1 | Create → API returns | wall time of the create call (both APIs return when the sandbox is running) |
-| M2 | Time to first command | first `true` after create; plus 10 more round trips for exec latency |
-| M3 | CPU under sustained load | one sha256 loop per vCPU for 180 s; work per 5 s window. Throttling shows as later windows falling below the first; compared across types |
-| M4 | git clone throughput | full and shallow (`--depth 1`) clones of vercel/next.js, pytorch/pytorch, kubernetes/kubernetes; wall time, bytes received (/proc/net/dev), Mbit/s, disk used |
-| M5 | Memory limit behaviour | allocate and touch 128 MB steps up to 2x the shape's RAM; record where it stops, how (MemoryError, process killed, exec error, sandbox restarted) and whether the sandbox still answers 5 s later |
-| M6 | Disk limits | write 256 MB files until ENOSPC, up to 2x the disk, on the home volume, then up to 12 GB on the OS layer (`/var/tmp`): GB written and MB/s. Agent37 bills the home volume and has a separate 10 GB OS layer |
-| M7 | Burst creation | N creates fired at the same instant (N = 10, 25, 45; two waves each), Medium, default type: successes, every API error code, create latency median and p95 |
-| M8 | Billed vs modeled | Agent37: per-instance compute from `GET /v1/usage` against lifetime x published rate, exact and rounded up to whole minutes. Daytona: billed total from the dashboard against the same model |
-| M9 | Sleep/wake and persistence | one instance per run writes a file and starts a background process, then 5 cycles of sleep → 120 s idle → first command. Wake latency, file kept, process kept. Agent37 uses its checkpointed sleep; Daytona has no checkpointed sleep, so stop/start |
-| M10 | Long-running soak (optional, runs beside the grid) | one auto-sleep instance per provider for 24 h, woken every 30 min with one command: wake latency distribution, failures, cost |
+| #   | Metric                                             | How                                                                                                                                                                                                                                                   |
+| --- | -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| M1  | Create → API returns                               | wall time of the create call (both APIs return when the sandbox is running)                                                                                                                                                                           |
+| M2  | Time to first command                              | first `true` after create; plus 10 more round trips for exec latency                                                                                                                                                                                  |
+| M3  | CPU under sustained load                           | one sha256 loop per vCPU for 180 s; work per 5 s window. Throttling shows as later windows falling below the first; compared across types                                                                                                             |
+| M4  | git clone throughput                               | full and shallow (`--depth 1`) clones of vercel/next.js, pytorch/pytorch, kubernetes/kubernetes; wall time, bytes received (/proc/net/dev), Mbit/s, disk used                                                                                         |
+| M5  | Memory limit behaviour                             | allocate and touch 128 MB steps up to 2x the shape's RAM; record where it stops, how (MemoryError, process killed, exec error, sandbox restarted) and whether the sandbox still answers 5 s later                                                     |
+| M6  | Disk limits                                        | write 256 MB files until ENOSPC, up to 2x the disk, on the home volume, then up to 12 GB on the OS layer (`/var/tmp`): GB written and MB/s. Agent37 bills the home volume and has a separate 10 GB OS layer                                           |
+| M7  | Burst creation                                     | N creates fired at the same instant (N = 10, 25, 45; two waves each), Medium, default type: successes, every API error code, create latency median and p95                                                                                            |
+| M8  | Billed vs modeled                                  | Agent37: per-instance compute from `GET /v1/usage` against lifetime x published rate, exact and rounded up to whole minutes. Daytona: billed total from the dashboard against the same model                                                          |
+| M9  | Sleep/wake and persistence                         | one instance per run writes a file and starts a background process, then 5 cycles of sleep → 120 s idle → first command. Wake latency, file kept, process kept. Agent37 uses its checkpointed sleep; Daytona has no checkpointed sleep, so stop/start |
+| M10 | Long-running soak (optional, runs beside the grid) | one auto-sleep instance per provider for 24 h, woken every 30 min with one command: wake latency distribution, failures, cost                                                                                                                         |
 
 Out of scope: GPU, Docker-in-Docker (only the Agent37 `vm` type can run it), regions outside the US.
 
 ## Task list and runs per cell
 
-| Job kind | Runs per cell | Cells | Sandboxes |
-|---|---|---|---|
-| lifecycle + CPU (M1–M3) | 10 | 8 | 80 |
-| clone (M4): 3 repos x full/shallow | 5 each = 30 | 8 | 240 |
-| memory (M5) | 5 | 8 | 40 |
-| disk (M6) | 3 | 8 | 24 |
-| **grid total** | 48 | 8 | **384** (288 Agent37, 96 Daytona) |
-| burst (M7) | 2 waves x (10+25+45) | 2 providers | 320 (160 each) |
-| sleep/wake (M9) | 3 instances x 5 cycles | 2 providers | 6 |
+| Job kind                           | Runs per cell          | Cells       | Sandboxes                         |
+| ---------------------------------- | ---------------------- | ----------- | --------------------------------- |
+| lifecycle + CPU (M1–M3)            | 10                     | 8           | 80                                |
+| clone (M4): 3 repos x full/shallow | 5 each = 30            | 8           | 240                               |
+| memory (M5)                        | 5                      | 8           | 40                                |
+| disk (M6)                          | 3                      | 8           | 24                                |
+| **grid total**                     | 48                     | 8           | **384** (288 Agent37, 96 Daytona) |
+| burst (M7)                         | 2 waves x (10+25+45)   | 2 providers | 320 (160 each)                    |
+| sleep/wake (M9)                    | 3 instances x 5 cycles | 2 providers | 6                                 |
 
 Statistics: medians with bootstrap 95% CIs over sandboxes (2,000 resamples, seed 0). Every failed create and every failed probe is kept as a result file and counted.
 
@@ -59,14 +59,14 @@ Statistics: medians with bootstrap 95% CIs over sandboxes (2,000 resamples, seed
 
 The model is sandbox lifetime x published rate. Agent37 bills whole minutes. Estimated sandbox-minutes per grid cell: lifecycle 10 x 4 + full clones 15 x 4 + shallow clones 15 x 1 + memory 5 x 2 + disk 3 x 5 = 140 minutes (2.33 h).
 
-| Item | Agent37 | Daytona |
-|---|---|---|
-| $/h, Medium / Large | default 0.0070 / 0.0133; vm 0.0161 / 0.0314; performance 0.0251 / 0.0495 | 0.1659 / 0.3317 |
-| grid (2.33 h per cell) | 0.142 $/h summed over 6 cells x 2.33 h = $0.33 | 0.497 $/h x 2.33 h = $1.16 |
-| bursts (160 sandboxes, about 1–1.5 min each) | $0.02 | about $0.70 |
-| sleep/wake + 24 h soak | about $0.20 | about $0.25 |
-| **estimate** | **about $0.55** | **about $2.10** |
-| **hard cap** | **$5** (`SPEND_CAP_A37`) | **$10** (`SPEND_CAP_DT`) |
+| Item                                         | Agent37                                                                  | Daytona                    |
+| -------------------------------------------- | ------------------------------------------------------------------------ | -------------------------- |
+| $/h, Medium / Large                          | default 0.0070 / 0.0133; vm 0.0161 / 0.0314; performance 0.0251 / 0.0495 | 0.1659 / 0.3317            |
+| grid (2.33 h per cell)                       | 0.142 $/h summed over 6 cells x 2.33 h = $0.33                           | 0.497 $/h x 2.33 h = $1.16 |
+| bursts (160 sandboxes, about 1–1.5 min each) | $0.02                                                                    | about $0.70                |
+| sleep/wake + 24 h soak                       | about $0.20                                                              | about $0.25                |
+| **estimate**                                 | **about $0.55**                                                          | **about $2.10**            |
+| **hard cap**                                 | **$5** (`SPEND_CAP_A37`)                                                 | **$10** (`SPEND_CAP_DT`)   |
 
 InstaBox is priced separately: vCPU $0.004/h + GiB $0.00225/h + the fixed 20 GiB `/data` at $0.00011/GiB-h (an upper bound; Pro includes 200 GiB across machines). Runtime is billed only while the machine is `running`. Its hard cap is **$10** (`SPEND_CAP_IB`). `analysis/billing_instabox.py` reads `GET /v1/usage`.
 

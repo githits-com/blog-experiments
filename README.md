@@ -6,8 +6,8 @@ Each folder is one post. Nothing here calls an LLM unless a post says so.
 
 ## Posts
 
-| Post | Folder | Blog |
-|---|---|---|
+| Post                                     | Folder                                                                                         | Blog                                                                                                                                  |
+| ---------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | Agent37, Daytona, and InstaBox sandboxes | [`sandbox-benchmark-agent37-daytona-instabox/`](./sandbox-benchmark-agent37-daytona-instabox/) | [githits.com/blog/agent37-daytona-sandboxes-for-coding-agents](https://githits.com/blog/agent37-daytona-sandboxes-for-coding-agents/) |
 
 ## How to run
@@ -24,6 +24,10 @@ python3 analysis/analyze.py   # writes local out/tables.md from those results
 ```
 
 `results/`, `logs/`, and `out/` are gitignored. If `results/` is missing, the analysis scripts print a short message and exit.
+
+## Development
+
+Format Python with `ruff format .`
 
 ## License
 

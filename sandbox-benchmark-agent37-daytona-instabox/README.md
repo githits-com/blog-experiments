@@ -6,18 +6,18 @@ Infrastructure benchmark of [Agent37](https://agent37.com), [Daytona](https://ww
 
 ## What it measures
 
-| Metric | How |
-|---|---|
-| Create → API returns | Wall time of the create call |
-| Time to first command | First `true` after create, plus 10 exec round trips |
-| CPU under sustained load | One sha256 loop per vCPU for 180 s |
-| git clone throughput | Full and shallow clones of `vercel/next.js`, `pytorch/pytorch`, `kubernetes/kubernetes` |
-| Memory limit behaviour | Allocate and touch 128 MB steps up to 2× the shape's RAM |
-| Disk limits | Write until ENOSPC on the home volume and the OS layer |
-| Burst creation | 10 / 25 / 45 creates fired at once (plus an Agent37 over-limit probe at 55) |
-| Billed vs modeled | Provider usage API against lifetime × published rate |
-| Sleep/wake persistence | File and background process across 5 sleep cycles |
-| 24 h soak | One Medium instance per provider, woken every 30 min |
+| Metric                   | How                                                                                     |
+| ------------------------ | --------------------------------------------------------------------------------------- |
+| Create → API returns     | Wall time of the create call                                                            |
+| Time to first command    | First `true` after create, plus 10 exec round trips                                     |
+| CPU under sustained load | One sha256 loop per vCPU for 180 s                                                      |
+| git clone throughput     | Full and shallow clones of `vercel/next.js`, `pytorch/pytorch`, `kubernetes/kubernetes` |
+| Memory limit behaviour   | Allocate and touch 128 MB steps up to 2× the shape's RAM                                |
+| Disk limits              | Write until ENOSPC on the home volume and the OS layer                                  |
+| Burst creation           | 10 / 25 / 45 creates fired at once (plus an Agent37 over-limit probe at 55)             |
+| Billed vs modeled        | Provider usage API against lifetime × published rate                                    |
+| Sleep/wake persistence   | File and background process across 5 sleep cycles                                       |
+| 24 h soak                | One Medium instance per provider, woken every 30 min                                    |
 
 Design, sample sizes, and the cost model: [`DESIGN.md`](./DESIGN.md).
 
@@ -34,17 +34,17 @@ pip install -r requirements.txt
 
 ## Environment variables
 
-| Variable | Required for | Notes |
-|---|---|---|
-| `AGENT37_API_KEY` | Agent37 cells, billing | Never printed or written by the harness |
-| `DAYTONA_API_KEY` | Daytona cells | Read by the Daytona SDK; never printed |
-| `INSTABOX_API_KEY` | InstaBox cells, billing | Sent as `X-API-Key`; never printed or written |
-| `INSTABOX_TEMPLATE` | optional | Default `agent-browser` |
-| `SPEND_CAP_A37` | optional | Default `$5`. Runner stops starting Agent37 jobs at the cap. |
-| `SPEND_CAP_DT` | optional | Default `$10`. |
-| `SPEND_CAP_IB` | optional | Default `$10`. |
-| `SOAK=1` | optional | Starts the Agent37 and Daytona 24 h soaks in the background from `run.sh`. |
-| `PY` | optional | Python interpreter. Defaults to `python3`. |
+| Variable            | Required for            | Notes                                                                      |
+| ------------------- | ----------------------- | -------------------------------------------------------------------------- |
+| `AGENT37_API_KEY`   | Agent37 cells, billing  | Never printed or written by the harness                                    |
+| `DAYTONA_API_KEY`   | Daytona cells           | Read by the Daytona SDK; never printed                                     |
+| `INSTABOX_API_KEY`  | InstaBox cells, billing | Sent as `X-API-Key`; never printed or written                              |
+| `INSTABOX_TEMPLATE` | optional                | Default `agent-browser`                                                    |
+| `SPEND_CAP_A37`     | optional                | Default `$5`. Runner stops starting Agent37 jobs at the cap.               |
+| `SPEND_CAP_DT`      | optional                | Default `$10`.                                                             |
+| `SPEND_CAP_IB`      | optional                | Default `$10`.                                                             |
+| `SOAK=1`            | optional                | Starts the Agent37 and Daytona 24 h soaks in the background from `run.sh`. |
+| `PY`                | optional                | Python interpreter. Defaults to `python3`.                                 |
 
 ## Reproduce Agent37 and Daytona
 
