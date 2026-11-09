@@ -1,7 +1,7 @@
 """One job = one fresh sandbox on one provider: create -> probes -> delete. Same job spec on both providers.
-Usage: bench.py <jobs.json> <outdir> [--a37-workers N] [--dt-workers N]
+Usage: bench.py <jobs.json> <outdir> [--a37-workers N] [--dt-workers N] [--ib-workers N]
 Job: {kind: lifecycle|clone|mem|disk, provider, shape, type, rep, repo?, mode?}
-Env: SPEND_CAP_A37 / SPEND_CAP_DT (USD, modeled from sandbox life x published rate; new jobs stop at the cap). STOP file in outdir stops new jobs.
+Env: SPEND_CAP_A37 / SPEND_CAP_DT / SPEND_CAP_IB (USD, modeled from sandbox life x published rate; new jobs stop at the cap). STOP file in outdir stops new jobs.
 Resumable: skips jobs whose result file exists. Every failure is kept (result file with 'error')."""
 import sys,os,json,time,threading,traceback,glob,argparse
 H=os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0,H)
@@ -31,12 +31,14 @@ def job(pv,j,outdir):
         try: b,cs=pv.create(j['shape'],j['type'],tag)
         except P.ProviderError as e: R['create_error']={'http':e.http,'code':e.code,'msg':str(e)[:300]}; raise
         R['id']=b.id; R['create_s']=round(cs,2)
+        if pv.name=='instabox': R['create_post_s']=getattr(b,'post_s',None); R['create_rl_wait_s']=getattr(b,'wait_s',None); R['create_s_excludes_rl_wait']=True; R['retries_so_far']=dict(pv.retries)
         t=time.time(); rc,out=pv.exec(b,'true'); R['first_cmd_s']=round(time.time()-t,3); R['ready_s']=round(time.time()-t0,2)
         rtt=[]
         for _ in range(10): t=time.time(); pv.exec(b,'true'); rtt.append(round(time.time()-t,3))
         R['exec_rtt_s']=rtt
         pv.upload(b,PROBE,f'{b.home}/probe.py'); R['sysinfo']=run_probe(pv,b,'sysinfo')
         c,m,d=P.SHAPES[j['shape']]; k=j['kind']
+        if pv.name=='instabox': d=20   # fixed 20 GiB /data on every InstaBox size (others: 8 / 10)
         if k=='lifecycle': R['cpu']=run_probe(pv,b,f'cpu 180 {c}')
         elif k=='clone': R['clone']=run_probe(pv,b,f"clone {j['repo']} {j['mode']} {b.home}/repo")
         elif k=='mem':
@@ -48,6 +50,9 @@ def job(pv,j,outdir):
         elif k=='disk':
             R['disk_home']=run_probe(pv,b,f'disk {b.home}/fill {d*2}')
             R['disk_root']=run_probe(pv,b,'disk /var/tmp/fill 12')   # OS layer (Agent37: separate 10 GB layer; Daytona: same volume)
+        if pv.name=='instabox':
+            try: R['machine_end']=pv.get(f'/v1/machines/{b.id}'); R['machine_end'].pop('metadata',None)
+            except Exception as e: R['machine_end_err']=str(e)[:200]
         if pv.name=='agent37':
             try: R['metrics']=pv.metrics(b)
             except Exception as e: R['metrics_err']=str(e)[:200]
@@ -65,9 +70,9 @@ def spent(outdir,prov):
         except Exception: pass
     return s
 if __name__=='__main__':
-    ap=argparse.ArgumentParser(); ap.add_argument('jobs'); ap.add_argument('outdir'); ap.add_argument('--a37-workers',type=int,default=10); ap.add_argument('--dt-workers',type=int,default=50)
+    ap=argparse.ArgumentParser(); ap.add_argument('jobs'); ap.add_argument('outdir'); ap.add_argument('--a37-workers',type=int,default=10); ap.add_argument('--dt-workers',type=int,default=50); ap.add_argument('--ib-workers',type=int,default=50)
     a=ap.parse_args(); jobs=json.load(open(a.jobs)); os.makedirs(a.outdir,exist_ok=True)
-    CAP={'agent37':float(os.environ.get('SPEND_CAP_A37','5')),'daytona':float(os.environ.get('SPEND_CAP_DT','10'))}
+    CAP={'agent37':float(os.environ.get('SPEND_CAP_A37','5')),'daytona':float(os.environ.get('SPEND_CAP_DT','10')),'instabox':float(os.environ.get('SPEND_CAP_IB','10'))}
     L=threading.Lock(); cnt={}; S={p:spent(a.outdir,p) for p in CAP}; stop=f'{a.outdir}/STOP'
     def runq(prov,W):
         pv=P.provider(prov); Q=[j for j in jobs if j['provider']==prov and not os.path.exists(fname(a.outdir,j))]
@@ -85,4 +90,5 @@ if __name__=='__main__':
     ths=[]
     if any(j['provider']=='agent37' for j in jobs): ths+=runq('agent37',a.a37_workers)
     if any(j['provider']=='daytona' for j in jobs): ths+=runq('daytona',a.dt_workers)
+    if any(j['provider']=='instabox' for j in jobs): ths+=runq('instabox',a.ib_workers)
     [t.join() for t in ths]; print('DONE',cnt,{k:round(v,3) for k,v in S.items()},flush=True)

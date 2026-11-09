@@ -6,7 +6,7 @@ path=f'{ROOT}/results/sandboxes.jsonl'
 if not os.path.isfile(path):
     sys.exit('No results/sandboxes.jsonl. This repository stores code only; run output is not committed.\n'
              'Published numbers: https://githits.com/blog/agent37-daytona-sandboxes-for-coding-agents/\n'
-             'Reproduce with ./run.sh (export AGENT37_API_KEY and DAYTONA_API_KEY), then re-run this script.')
+             'Reproduce with ./run.sh, or the InstaBox commands in README.md, then re-run this script.')
 ev={}
 for l in open(path):
     r=json.loads(l); ev.setdefault((r['provider'],r['id']),{})[r['event']]=r

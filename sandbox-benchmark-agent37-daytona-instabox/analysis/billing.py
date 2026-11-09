@@ -6,7 +6,7 @@ ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__))); sys.path.inser
 if not (glob.glob(f'{ROOT}/results/runs*/*.json') or glob.glob(f'{ROOT}/results/smoke/*.json')):
     sys.exit('No benchmark JSON under results/. This repository stores code only; run output is not committed.\n'
              'Published numbers: https://githits.com/blog/agent37-daytona-sandboxes-for-coding-agents/\n'
-             'Reproduce with ./run.sh (export AGENT37_API_KEY and DAYTONA_API_KEY), then re-run this script.')
+             'Reproduce with ./run.sh, or the InstaBox commands in README.md, then re-run this script.')
 pv=P.Agent37(); today=datetime.date.today(); u=pv.get('/usage',params={'from':str(today-datetime.timedelta(days=3)),'to':str(today)})
 billed={i['id']:i['compute_micros']/1e6 for i in u.get('instances',[])}
 life={}

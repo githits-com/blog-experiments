@@ -8,7 +8,7 @@ Each folder is one post. Nothing here calls an LLM unless a post says so.
 
 | Post | Folder | Blog |
 |---|---|---|
-| Agent37 vs Daytona: sandboxes for coding agents | [`agent37-vs-daytona-sandboxes/`](./agent37-vs-daytona-sandboxes/) | [githits.com/blog/agent37-daytona-sandboxes-for-coding-agents](https://githits.com/blog/agent37-daytona-sandboxes-for-coding-agents/) |
+| Agent37, Daytona, and InstaBox sandboxes | [`sandbox-benchmark-agent37-daytona-instabox/`](./sandbox-benchmark-agent37-daytona-instabox/) | [githits.com/blog/agent37-daytona-sandboxes-for-coding-agents](https://githits.com/blog/agent37-daytona-sandboxes-for-coding-agents/) |
 
 ## How to run
 
