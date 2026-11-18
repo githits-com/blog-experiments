@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Ruff
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install "ruff==0.17.5"
+          ruff check .
+          ruff format --check .
+
+      - name: Byte-compile Python
+        run: |
+          set -euo pipefail
+          mapfile -d '' files < <(find . -name '*.py' -not -path './.git/*' -print0)
+          python -m py_compile "${files[@]}"
+
+      - name: Shellcheck
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y shellcheck
+          mapfile -d '' files < <(find . -name '*.sh' -not -path './.git/*' -print0)
+          shellcheck "${files[@]}"
+
+      - name: Install gitleaks
+        run: |
+          set -euo pipefail
+          version=8.30.1
+          curl -sSfL "https://github.com/gitleaks/gitleaks/releases/download/v${version}/gitleaks_${version}_linux_x64.tar.gz" \
+            | sudo tar -xz -C /usr/local/bin gitleaks
+          gitleaks version
+
+      - name: Gitleaks (full history)
+        run: gitleaks detect --source . --redact --log-opts="--all"

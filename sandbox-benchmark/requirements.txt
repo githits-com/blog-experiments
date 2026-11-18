@@ -1,0 +1,4 @@
+requests>=2.31
+daytona>=0.21
+matplotlib>=3.8
+vercel-sandbox>=1.0.0
